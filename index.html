@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROOTS CAMPUS — Premier Professional Coaching Institute | Guided by Swpan Sir</title>
+    <meta name="description" content="ROOTS CAMPUS provides top-tier coaching for Board Exams, JEE, NEET, and Foundation courses. Guided by Swpan Sir. Quality Education. Expert Guidance.">
+    <meta name="keywords" content="ROOTS CAMPUS, Swpan Sir, Coaching Institute, IIT JEE Coaching, NEET Preparation, Board Exams">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="ROOTS CAMPUS — Premier Professional Coaching Institute">
+    <meta property="og:description" content="Quality Education. Expert Guidance. A Better Tomorrow. Guided by Swpan Sir. Direct Admission Enquiries available via WhatsApp & Instagram.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            navyLight: '#1E293B',
+                            cyan: '#06B6D4',
+                            cyanDark: '#0891B2',
+                            sky: '#38BDF8',
+                            accent: '#F59E0B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-hero {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 60%, #0891B2 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0891b2;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-cyan selection:text-white flex flex-col min-h-screen">
+
+    <header class="sticky top-0 z-40 bg-brand-navy/95 backdrop-blur-md border-b border-slate-800 text-white transition-all duration-300 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="rootsbanner.png" class="flex items-center gap-3 group focus:outline-none">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-cyan to-brand-sky flex items-center justify-center text-brand-navy font-black text-xl shadow-lg group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-graduation-cap text-lg"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-xl tracking-tight text-white group-hover:text-brand-sky transition-colors">ROOTS CAMPUS</span>
+                        <span class="text-[10px] text-brand-cyan font-medium tracking-widest uppercase -mt-1">Guided by Swpan Sir</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+                    <a href="#home" class="hover:text-brand-sky transition-colors py-1">Home</a>
+                    <a href="#about" class="hover:text-brand-sky transition-colors py-1">About Us</a>
+                    <a href="#courses" class="hover:text-brand-sky transition-colors py-1">Courses</a>
+                    <a href="#faculty" class="hover:text-brand-sky transition-colors py-1">Faculty</a>
+                    <a href="#achievements" class="hover:text-brand-sky transition-colors py-1">Achievements</a>
+                    <a href="#gallery" class="hover:text-brand-sky transition-colors py-1">Gallery</a>
+                    <a href="#reviews" class="hover:text-brand-sky transition-colors py-1">Reviews</a>
+                    <a href="#contact" class="hover:text-brand-sky transition-colors py-1">Contact</a>
+                </nav>
+
+                <!-- Header CTA Button -->
+                <div class="hidden lg:flex items-center">
+                    <a href="#enquire" class="bg-gradient-to-r from-brand-cyan to-brand-cyanDark text-white px-5 py-2.5 rounded-xl font-semibold shadow-md hover:shadow-cyan-500/20 hover:scale-105 transition-all text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane text-xs"></i>
+                        <span>Admission Enquiry</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button id="mobile-menu-btn" aria-label="Toggle Mobile Menu" class="lg:hidden text-slate-300 hover:text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-cyan">
+                    <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-navyLight border-t border-slate-800 transition-all duration-300 px-4 pt-3 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-slate-200 hover:text-brand-sky font-medium">Home</a>
+            <a href="#about" class="block py-2 text-slate-200 hover:text-brand-sky font-medium">About Us</a>
+            <a href="#courses" class="block py-2 text-slate-200 hover:text-brand-sky font-medium">Courses</a>
+            <a href="#faculty" class="block py-2 text-slate-200 hover:text-brand-sky font-medium">Faculty</a>
+            <a href="#achievements" class="block py-2 text-slate-200 hover:text-brand-sky font-medium">Achievements</a>
+            <a href="#gallery" class="block py-2 text-slate-200 hover:text-brand-sky font-medium">Gallery</a>
+            <a href="#reviews" class="block py-2 text-slate-200 hover:text-brand-sky font-medium">Reviews</a>
+            <a href="#contact" class="block py-2 text-slate-200 hover:text-brand-sky font-medium">Contact Us</a>
+            <a href="#enquire" class="block w-full text-center bg-brand-cyan text-brand-navy font-bold py-3 rounded-xl shadow-md mt-4">
+                Enquire for Admission
+            </a>
+        </div>
+    </header>
+
+    <section id="home" class="relative gradient-hero text-white overflow-hidden py-20 lg:py-28">
+        <!-- Decorative Ambient Blur Blobs -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-cyan/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 right-0 w-80 h-80 bg-brand-sky/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Text Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 text-brand-sky text-xs sm:text-sm font-semibold tracking-wide">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Guided & Mentored by Swpan Sir</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Build Your Future with <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-sky to-brand-cyan">ROOTS CAMPUS</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Quality Education. Expert Guidance. A Better Tomorrow. Empowering students with rock-solid conceptual clarity and disciplined exam strategy.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#enquire" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-brand-cyan to-brand-cyanDark text-white font-bold rounded-xl shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all text-center flex items-center justify-center gap-2">
+                            <span>Enquire for Admission</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#courses" class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold rounded-xl backdrop-blur-sm transition-all text-center">
+                            Explore Our Courses
+                        </a>
+                    </div>
+
+                    <!-- Trust Highlights -->
+                    <div class="pt-8 border-t border-slate-700/60 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <p class="text-2xl lg:text-3xl font-extrabold text-white">Conceptual</p>
+                            <p class="text-xs text-slate-400">Clarity First</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl lg:text-3xl font-extrabold text-brand-sky">Personal</p>
+                            <p class="text-xs text-slate-400">Mentorship</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl lg:text-3xl font-extrabold text-white">Regular</p>
+                            <p class="text-xs text-slate-400">Practice Tests</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Card/Image Preview -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute inset-0 bg-gradient-to-r from-brand-cyan to-brand-sky rounded-3xl blur-lg opacity-30 transform rotate-3 scale-95"></div>
+                        <div class="relative rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl bg-brand-navyLight">
+                            <img src="rootsbanner.png" 
+                                 alt="ROOTS CAMPUS Classroom" 
+                                 class="w-full h-72 sm:h-80 object-cover"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x600/0f172a/38bdf8?text=ROOTS+CAMPUS+Classroom';">
+                            <div class="p-6 space-y-3 bg-slate-900/90 backdrop-blur-md">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-brand-cyan uppercase tracking-wider">Admissions Open</span>
+                                    <span class="text-xs text-slate-400"><i class="fa-solid fa-circle text-emerald-400 text-[8px] mr-1"></i> New Batches Starting</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-white">Join the Journey of Academic Excellence</h3>
+                                <p class="text-xs text-slate-300">Direct interactive classes, doubt-solving sessions, and comprehensive study material.</p>
+                                <a href="#enquire" class="inline-flex items-center text-xs font-bold text-brand-sky hover:text-white transition-colors gap-1 pt-1">
+                                    <span>Get Batch Timings on WhatsApp</span>
+                                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-cyanDark font-extrabold text-sm uppercase tracking-wider">About Our Institute</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Dedicated to Nurturing Strong Academic Foundations</h2>
+                <div class="w-16 h-1 bg-brand-cyan mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-slate-900 leading-snug">
+                        Transforming Learning through Conceptual Understanding and Dedicated Guidance
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        At <strong class="text-slate-800">ROOTS CAMPUS</strong>, we believe that true academic excellence comes from a deeply rooted understanding of core concepts rather than simple rote memorization. Founded under the leadership of <strong class="text-brand-navy">Swpan Sir</strong>, our institute provides a structured, student-focused environment where learners build confidence and problem-solving mastery.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Our classroom approach blends rigorous subject coverage with frequent diagnostic evaluations, ensuring that every student receives individualized attention to overcome doubts and achieve their personal best in competitive and board examinations.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex items-start gap-3">
+                            <div class="p-2 bg-brand-cyan/10 text-brand-cyanDark rounded-lg text-lg">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Vision</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">To empower every student with clear concepts and lifelong confidence.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex items-start gap-3">
+                            <div class="p-2 bg-brand-cyan/10 text-brand-cyanDark rounded-lg text-lg">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Mission</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">Deliver accessible, disciplined, and high-impact coaching for all exams.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Founder Profile Highlight Box -->
+                <div class="p-8 rounded-3xl bg-slate-900 text-white shadow-xl relative overflow-hidden">
+                    <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-brand-cyan/10 rounded-full blur-2xl"></div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-2xl bg-brand-cyan/20 border border-brand-cyan/40 flex items-center justify-center text-brand-sky text-2xl font-bold">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-brand-cyan uppercase tracking-wider">Founder & Lead Mentor</span>
+                            <h3 class="text-2xl font-extrabold text-white">Swpan Sir</h3>
+                            <p class="text-xs text-slate-400">ROOTS CAMPUS Leadership</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-slate-300 italic text-sm leading-relaxed border-l-2 border-brand-cyan pl-4 my-4">
+                        "Education is not just about clearing an examination; it is about grounding yourself in concepts so deeply that no problem feels unfamiliar. We walk with you through every step of learning."
+                    </blockquote>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                        <span><i class="fa-solid fa-check-circle text-brand-cyan mr-1"></i> Dedicated Mentorship</span>
+                        <span><i class="fa-solid fa-check-circle text-brand-cyan mr-1"></i> Continuous Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="text-brand-cyanDark font-extrabold text-sm uppercase tracking-wider">Our Programs</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Explore Our Coaching Courses</h2>
+                <p class="text-slate-600 text-sm sm:text-base">Targeted preparation programs tailored for foundation, board, and competitive entrance success.</p>
+                <div class="w-16 h-1 bg-brand-cyan mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div id="course-filters" class="flex flex-wrap justify-center gap-2 mb-10">
+                <button data-filter="all" class="filter-btn px-5 py-2 rounded-xl font-semibold text-sm transition-all bg-brand-navy text-white shadow-md">All Programs</button>
+                <button data-filter="boards" class="filter-btn px-5 py-2 rounded-xl font-semibold text-sm transition-all bg-white text-slate-700 hover:bg-slate-200">Board Exams</button>
+                <button data-filter="competitive" class="filter-btn px-5 py-2 rounded-xl font-semibold text-sm transition-all bg-white text-slate-700 hover:bg-slate-200">JEE & NEET</button>
+                <button data-filter="foundation" class="filter-btn px-5 py-2 rounded-xl font-semibold text-sm transition-all bg-white text-slate-700 hover:bg-slate-200">Foundation</button>
+            </div>
+
+            <!-- Dynamic Course Grid -->
+            <div id="courses-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Javascript will inject courses dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-navy text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-sky font-extrabold text-sm uppercase tracking-wider">The ROOTS Advantage</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold">Why Choose ROOTS CAMPUS?</h2>
+                <p class="text-slate-400 text-sm sm:text-base">We prioritize solid foundations, disciplined practice, and student clarity above all else.</p>
+                <div class="w-16 h-1 bg-brand-cyan mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700 hover:border-brand-cyan transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-cyan/20 text-brand-sky flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Concept-Based Learning</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Focus on fundamental principles to make complex numericals and theoretical concepts easy to understand.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700 hover:border-brand-cyan transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-cyan/20 text-brand-sky flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Experienced Faculty</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Subject mentors guided by Swpan Sir who bring enthusiasm and effective teaching methodologies to class.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700 hover:border-brand-cyan transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-cyan/20 text-brand-sky flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-file-pen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Regular Practice Tests</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Topic-wise evaluations, chapter tests, and mock board/competitive exams to build time management skills.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700 hover:border-brand-cyan transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-cyan/20 text-brand-sky flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Doubt-Solving Support</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Dedicated sessions for individual student questions to ensure no doubt goes unresolved.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700 hover:border-brand-cyan transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-cyan/20 text-brand-sky flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Student Guidance</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Personal mentorship on exam strategy, stress reduction, and structured self-study routines.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700 hover:border-brand-cyan transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-cyan/20 text-brand-sky flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-book-open flex"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Structured Study Notes</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Crisp, highly relevant study materials and question banks prepared directly by faculty members.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faculty" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-cyanDark font-extrabold text-sm uppercase tracking-wider">Teaching Staff</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Meet Our Dedicated Faculty</h2>
+                <p class="text-slate-600 text-sm sm:text-base">Passionate educators committed to inspiring student success.</p>
+                <div class="w-16 h-1 bg-brand-cyan mx-auto rounded-full"></div>
+            </div>
+
+            <div id="faculty-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Javascript will inject faculty cards dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-cyanDark font-extrabold text-sm uppercase tracking-wider">Student Wall of Pride</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Recent Student Achievements</h2>
+                <p class="text-slate-600 text-sm">Celebrating the dedication and hard work of our high performers.</p>
+                <div class="w-16 h-1 bg-brand-cyan mx-auto rounded-full"></div>
+            </div>
+
+            <div id="achievements-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Javascript will inject achievement items -->
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-cyanDark font-extrabold text-sm uppercase tracking-wider">Life at ROOTS CAMPUS</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Coaching Institute Gallery</h2>
+                <p class="text-slate-600 text-sm">Take a look inside our classrooms, interactive sessions, and study atmosphere.</p>
+                <div class="w-16 h-1 bg-brand-cyan mx-auto rounded-full"></div>
+            </div>
+
+            <div id="gallery-grid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Javascript will inject gallery images dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
+        <button id="lightbox-close" class="absolute top-6 right-6 text-white text-3xl hover:text-brand-sky focus:outline-none" aria-label="Close Lightbox">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl max-h-[85vh] text-center">
+            <img id="lightbox-img" src="" alt="Gallery Preview" class="max-w-full max-h-[75vh] object-contain mx-auto rounded-lg shadow-2xl">
+            <p id="lightbox-caption" class="text-slate-300 mt-4 text-sm font-medium"></p>
+        </div>
+    </div>
+
+    <section id="reviews" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-cyanDark font-extrabold text-sm uppercase tracking-wider">Testimonials</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">What Students & Parents Say</h2>
+                <p class="text-slate-600 text-sm">Genuine reflections on learning at ROOTS CAMPUS.</p>
+                <div class="w-16 h-1 bg-brand-cyan mx-auto rounded-full"></div>
+            </div>
+
+            <div id="reviews-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Javascript will inject review cards -->
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 bg-gradient-to-r from-slate-900 to-brand-navy p-8 sm:p-12 rounded-3xl text-white shadow-xl">
+                <div class="space-y-3 max-w-2xl text-center lg:text-left">
+                    <span class="inline-block px-3 py-1 bg-brand-cyan/20 text-brand-sky rounded-full text-xs font-bold uppercase tracking-wider">Free Educational Resources</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold">Need Sample Notes or Syllabus Overviews?</h3>
+                    <p class="text-slate-300 text-sm">We share free demo worksheets, model test papers, and exam preparation guides via WhatsApp.</p>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="requestFreeResources()" class="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg transition-all flex items-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Get Resources on WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="enquire" class="py-20 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl shadow-xl">
+                <div class="text-center mb-10 space-y-2">
+                    <span class="text-brand-cyanDark font-extrabold text-sm uppercase tracking-wider">Direct Admission Channel</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Admission Enquiry Form</h2>
+                    <p class="text-slate-600 text-sm">Fill in your details to start your enquiry. Select WhatsApp or Instagram to send your message directly to our official handle.</p>
+                </div>
+
+                <form id="admission-form" class="space-y-6" novalidate>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <!-- Student Name -->
+                        <div>
+                            <label for="studentName" class="block text-xs font-bold text-slate-700 uppercase mb-2">Student Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="studentName" required placeholder="e.g. Md Imamul Kalam" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-cyan focus:border-transparent outline-none transition-all text-sm">
+                            <p class="error-msg text-xs text-red-500 mt-1 hidden">Please enter student name.</p>
+                        </div>
+
+                        <!-- Parent Name -->
+                        <div>
+                            <label for="parentName" class="block text-xs font-bold text-slate-700 uppercase mb-2">Parent / Guardian Name <span class="text-slate-400 font-normal">(Optional)</span></label>
+                            <input type="text" id="parentName" placeholder="e.g. Md Kalamuddin" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-cyan focus:border-transparent outline-none transition-all text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <!-- Mobile Number -->
+                        <div>
+                            <label for="mobileNumber" class="block text-xs font-bold text-slate-700 uppercase mb-2">Mobile Number (WhatsApp) <span class="text-red-500">*</span></label>
+                            <input type="tel" id="mobileNumber" required placeholder="10-digit Indian mobile number" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-cyan focus:border-transparent outline-none transition-all text-sm">
+                            <p class="error-msg text-xs text-red-500 mt-1 hidden">Please enter a valid 10-digit Indian mobile number.</p>
+                        </div>
+
+                        <!-- Class / Exam -->
+                        <div>
+                            <label for="studentClass" class="block text-xs font-bold text-slate-700 uppercase mb-2">Class / Target Exam <span class="text-red-500">*</span></label>
+                            <select id="studentClass" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-cyan focus:border-transparent outline-none transition-all text-sm bg-white">
+                                <option value="">-- Select Class or Exam --</option>
+                                <option value="Class 8th Foundation">Class 8th Foundation</option>
+                                <option value="Class 9th Foundation">Class 9th Foundation</option>
+                                <option value="Class 10th Board">Class 10th Board</option>
+                                <option value="Class 11th Science">Class 11th Science (Physics/Chem/Maths/Bio)</option>
+                                <option value="Class 12th Board">Class 12th Board</option>
+                                <option value="JEE Main & Advanced">JEE Main & Advanced</option>
+                                <option value="NEET UG Medical">NEET UG Medical</option>
+                            </select>
+                            <p class="error-msg text-xs text-red-500 mt-1 hidden">Please select class or target exam.</p>
+                        </div>
+                    </div>
+
+                    <!-- Course Interested In -->
+                    <div>
+                        <label for="courseSelect" class="block text-xs font-bold text-slate-700 uppercase mb-2">Course Interested In <span class="text-red-500">*</span></label>
+                        <select id="courseSelect" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-cyan focus:border-transparent outline-none transition-all text-sm bg-white">
+                            <option value="">-- Choose Course --</option>
+                            <!-- Dynamically populated from JS courses data -->
+                        </select>
+                        <p class="error-msg text-xs text-red-500 mt-1 hidden">Please select a course.</p>
+                    </div>
+
+                    <!-- Preferred Contact Method Selector -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Preferred Response Channel <span class="text-red-500">*</span></label>
+                        <div class="grid grid-cols-2 gap-4">
+                            <label class="flex items-center gap-3 p-4 rounded-xl border border-slate-200 cursor-pointer hover:border-emerald-500 has-[:checked]:border-emerald-500 has-[:checked]:bg-emerald-50 transition-all">
+                                <input type="radio" name="contactChannel" value="WhatsApp" checked class="accent-emerald-600 w-4 h-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-emerald-600 text-lg"></i>
+                                    <span class="text-sm font-semibold text-slate-800">WhatsApp</span>
+                                </div>
+                            </label>
+
+                            
+                        </div>
+                    </div>
+
+                    <!-- Optional Message -->
+                    <div>
+                        <label for="studentMessage" class="block text-xs font-bold text-slate-700 uppercase mb-2">Question / Message <span class="text-slate-400 font-normal">(Optional)</span></label>
+                        <textarea id="studentMessage" rows="3" placeholder="e.g. Want details regarding batch timings or demo class..." 
+                                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-cyan focus:border-transparent outline-none transition-all text-sm"></textarea>
+                    </div>
+
+                    <!-- Privacy Notice Checkbox -->
+                    <div class="space-y-2">
+                        <label class="flex items-start gap-3 cursor-pointer">
+                            <input type="checkbox" id="privacyConsent" required class="mt-1 accent-brand-cyan w-4 h-4 rounded">
+                            <span class="text-xs text-slate-600">
+                                I agree to share my details for admission enquiry purposes. Details will be formatted and redirected to ROOTS CAMPUS official messaging handle (+91 88090 52703 / Instagram).
+                            </span>
+                        </label>
+                        <p class="error-msg text-xs text-red-500 hidden" id="privacy-error">You must accept the privacy notice to proceed.</p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full py-4 bg-gradient-to-r from-brand-navy to-brand-navyLight hover:from-brand-cyanDark hover:to-brand-navy text-white font-bold rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 text-base">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Send Admission Enquiry</span>
+                    </button>
+                </form>
+
+                <!-- Post-Submit Instruction Screen -->
+                <div id="form-success-box" class="hidden mt-6 p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-4">
+                    <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-2xl">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-emerald-900">Redirecting to Send Your Enquiry!</h3>
+                    <p id="success-description" class="text-xs text-emerald-800 max-w-lg mx-auto">
+                        Your formatted enquiry message is ready. Click the button below if your messaging app did not open automatically.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-3 pt-2">
+                        <a id="action-redirect-btn" href="#" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 bg-emerald-600 text-white font-bold rounded-xl text-sm shadow hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <span id="action-btn-text">Open Messaging App</span>
+                        </a>
+                        <button id="fallback-copy-btn" class="px-6 py-2.5 bg-white border border-slate-300 text-slate-700 font-bold rounded-xl text-sm hover:bg-slate-50 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Text Message</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <span class="text-brand-cyanDark font-extrabold text-sm uppercase tracking-wider">Help & Clarity</span>
+                <h2 class="text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+                <div class="w-16 h-1 bg-brand-cyan mx-auto rounded-full"></div>
+            </div>
+
+            <div id="faq-accordion" class="space-y-4">
+                <!-- Javascript will inject FAQ dynamic items -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-brand-cyan font-extrabold text-xs uppercase tracking-wider">Get in Touch</span>
+                        <h2 class="text-3xl font-extrabold text-white mt-1">Visit or Contact ROOTS CAMPUS</h2>
+                        <p class="text-slate-400 text-sm mt-2">Have questions about admissions, fee structures, or batch schedules? Reach out directly.</p>
+                    </div>
+
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-800/60 border border-slate-800">
+                            <div class="p-3 bg-brand-cyan/10 text-brand-sky rounded-xl text-lg">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Founder & Director</h4>
+                                <p class="text-slate-300">Swpan Sir</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-800/60 border border-slate-800">
+                            <div class="p-3 bg-emerald-500/10 text-emerald-400 rounded-xl text-lg">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Direct WhatsApp Hotline</h4>
+                                <a href="https://wa.me/918809052703" target="_blank" rel="noopener noreferrer" class="text-brand-sky hover:underline font-semibold">+91 88090 52703</a>
+                                <p class="text-xs text-slate-400 mt-0.5">Quick response for admission queries</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-800/60 border border-slate-800">
+                            <div class="p-3 bg-brand-cyan/10 text-brand-sky rounded-xl text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Institute Campus Address</h4>
+                                <p class="text-slate-300" id="institute-address">ROOTS CAMPUS Coaching Center Bishunpur, Maharajganj, Bihar 841238 (Address details available on enquiry)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-800/60 border border-slate-800">
+                            <div class="p-3 bg-brand-cyan/10 text-brand-sky rounded-xl text-lg">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Office Hours</h4>
+                                <p class="text-slate-300">Monday - Saturday: 8:00 AM - 7:00 PM</p>
+                                <p class="text-xs text-slate-400">Sunday: By appointment</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Social Action Buttons -->
+                    <div class="flex gap-4">
+                        <a href="https://wa.me/918809052703" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-center text-sm shadow transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+                        <a id="contact-insta-link" href="https://www.instagram.com/rootscampus?vrfl=MTdtdjFjdmx6YmhvNw==" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 text-white font-bold rounded-xl text-center text-sm shadow transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                            <span>Instagram Handle</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Placeholder Container -->
+                <div class="lg:col-span-7 flex flex-col h-full min-h-[350px] rounded-3xl overflow-hidden border border-slate-800 bg-slate-800/50">
+                    <div class="p-4 bg-slate-800 border-b border-slate-700 flex items-center justify-between">
+                        <span class="text-xs font-bold text-slate-300 uppercase tracking-wider"><i class="fa-solid fa-map-location-dot mr-2 text-brand-cyan"></i> Institute Location</span>
+                        <span class="text-xs text-slate-400">Google Maps Navigation</span>
+                    </div>
+                    <div class="flex-1 relative w-full h-full bg-slate-800 flex items-center justify-center p-6 text-center">
+                        <!-- Embedded Responsive Map or Placeholder -->
+                        <iframe title="ROOTS CAMPUS Location Map" 
+                                class="w-full h-full min-h-[300px] rounded-2xl border-0" 
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.623842593251!2d84.5081355!3d26.111195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992ef00148bcd69%3A0xe8132b4a5a30d49d!2sROOTS%20CAMPUS!5e0!3m2!1sen!2sin!4v1793096877723!5m2!1sen!2sin" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe> 
+                                
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 border-t border-slate-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                
+                <!-- Column 1: Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-brand-cyan flex items-center justify-center text-brand-navy font-bold text-lg">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="font-extrabold text-lg text-white">ROOTS CAMPUS</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Premier coaching institute committed to building fundamental concepts and academic brilliance for board and competitive examinations.
+                    </p>
+                    <p class="text-xs text-brand-sky font-semibold">Founder: Swpan Sir</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-brand-cyan transition-colors">Home Page</a></li>
+                        <li><a href="#about" class="hover:text-brand-cyan transition-colors">About Institute</a></li>
+                        <li><a href="#courses" class="hover:text-brand-cyan transition-colors">Courses & Batches</a></li>
+                        <li><a href="#faculty" class="hover:text-brand-cyan transition-colors">Faculty Members</a></li>
+                        <li><a href="#gallery" class="hover:text-brand-cyan transition-colors">Institute Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact & Enquiry -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Admission Office</h4>
+                    <p class="text-xs">WhatsApp / Contact:</p>
+                    <a href="https://wa.me/918809052703" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold block text-sm hover:underline">+91 88090 52703</a>
+                    <p class="text-xs text-slate-400">Direct admission enquiry available via WhatsApp & Instagram.</p>
+                </div>
+
+                <!-- Column 4: Privacy & Notice -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Information Policy</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        This is an official public-facing portal for ROOTS CAMPUS. All enquiries are transferred securely via user-initiated WhatsApp or Instagram messages.
+                    </p>
+                    <button onclick="togglePrivacyModal()" class="text-xs text-brand-cyan hover:underline font-semibold focus:outline-none">
+                        View Privacy Notice
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright Line -->
+            <div class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; <span id="current-year"></span> ROOTS CAMPUS. All rights reserved. Guided by Swpan Sir.</p>
+		<p>&copy; <span id="current-year"></span> Made By Mr. Md Imamul Kalam</p>
+                <div class="flex gap-4">
+                    <a href="#enquire" class="hover:text-slate-300">Admission Form</a>
+                    <span>•</span>
+                    <button onclick="togglePrivacyModal()" class="hover:text-slate-300">Privacy Policy</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/918809052703?text=Hello%20ROOTS%20CAMPUS%2C%20I%20have%20an%20admission%20enquiry." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Direct WhatsApp Enquiry" 
+       class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 rounded-full shadow-2xl hover:scale-110 transition-all flex items-center justify-center group focus:outline-none focus:ring-4 focus:ring-emerald-300">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-in-out whitespace-nowrap text-xs font-bold pl-0 group-hover:pl-2">
+            WhatsApp Enquiry
+        </span>
+    </a>
+
+    <div id="privacy-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-2xl relative">
+            <button onclick="togglePrivacyModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="text-xl font-bold text-slate-900 border-b pb-2">Privacy & Admission Data Policy</h3>
+            <div class="text-xs text-slate-600 space-y-2 max-h-60 overflow-y-auto pr-2">
+                <p><strong>1. Data Sharing:</strong> Information submitted through our Admission Enquiry form (Name, Mobile, Course preference) is packaged into a formatted text message to communicate directly with ROOTS CAMPUS administrators.</p>
+                <p><strong>2. Direct Messaging Channel:</strong> When choosing WhatsApp or Instagram, your browser opens the respective application or web portal. Messages are submitted explicitly by you.</p>
+                <p><strong>3. Storage & Security:</strong> We do not store sensitive personal information, passwords, or bank details on this web portal. No account creation or login is required.</p>
+                <p><strong>4. Official Contact:</strong> The official WhatsApp contact for ROOTS CAMPUS is <strong>+91 88090 52703</strong>, guided by Founder Swpan Sir.</p>
+            </div>
+            <div class="text-right pt-2">
+                <button onclick="togglePrivacyModal()" class="px-5 py-2 bg-brand-navy text-white rounded-xl text-xs font-bold">I Understand</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const CONFIG = {
+            instituteName: "ROOTS CAMPUS",
+            founder: "Swpan Sir",
+            whatsappNumber: "918809052703", // Clean international format without '+' or spaces
+            whatsappDisplay: "+91 88090 52703",
+            instagramProfileUrl: "https://instagram.com", // Replace with official handle when ready
+            address: "ROOTS CAMPUS Coaching Center, Main Educational Hub",
+            
+            // Editable Courses Data
+            courses: [
+                {
+                    id: "c1",
+                    name: "Class 10th Board Booster Program",
+                    category: "boards",
+                    class: "Class 10th",
+                    description: "Comprehensive coverage of Mathematics & Science with regular practice papers and board strategy guidance.",
+                    subjects: "Mathematics, Physics, Chemistry, Biology",
+                    duration: "1 Year Full Academic Program"
+                },
+                {
+                    id: "c2",
+                    name: "Class 11th & 12th Science Foundation",
+                    category: "boards",
+                    class: "Class 11th / 12th",
+                    description: "Strong emphasis on conceptual clarity for Physics, Chemistry, and Mathematics/Biology for Board Exams.",
+                    subjects: "Physics, Chemistry, Mathematics / Biology",
+                    duration: "1 or 2 Year Integrated Course"
+                },
+                {
+                    id: "c3",
+                    name: "IIT-JEE Main & Advanced Preparation",
+                    category: "competitive",
+                    class: "Class 11th, 12th & Target",
+                    description: "Rigorous problem-solving, formula mastery, speed-building, and full-length mock tests for Engineering Aspirants.",
+                    subjects: "Physics, Chemistry, Mathematics",
+                    duration: "Target / Foundation Batches"
+                },
+                {
+                    id: "c4",
+                    name: "NEET Medical Entrance Program",
+                    category: "competitive",
+                    class: "Class 11th, 12th & Target",
+                    description: "In-depth Biology focus alongside numerical problem-solving in Physics & Chemistry for Medical Aspirants.",
+                    subjects: "Physics, Chemistry, Biology (Botany & Zoology)",
+                    duration: "1 or 2 Year Medical Course"
+                },
+                {
+                    id: "c5",
+                    name: "Pre-Foundation Course (Class 8th & 9th)",
+                    category: "foundation",
+                    class: "Class 8th & 9th",
+                    description: "Building early analytical thinking, science fundamentals, and math logic for future competitive excellence.",
+                    subjects: "Mathematics, Physics, Chemistry, Biology, Logical Reasoning",
+                    duration: "1 Year Course"
+                }
+            ],
+
+            // Editable Faculty Data
+            faculty: [
+                {
+                    name: "Swpan Sir",
+                    subject: "Institute Founder & Mathematics Specialist",
+                    sub: " ROOTS CAMPUS with a strong passion for mathematics mentor details. Specializes in algebra, calculus, and problem shortcuts.",
+                    image: "swpan.jpeg"
+                },
+                {
+                    name: "Sanjeev Sir",
+                    subject: "Physics Specialist",
+                    sub: "Placeholder for Passionate physics mentor specializing in mechanics & conceptual learning.",
+                    image: "sanjeev.jpg"
+                },
+		{
+                    name: "Sima miss",
+                    subject: "Biology Specialist",
+                    sub: "Placeholder for Dedicated biology mentor specializing in physiology & genetics.",
+                    image: "sima.jpeg"
+                },
+		{
+                    name: "Sakshi miss",
+                    subject: "Chemistry Specialist",
+                    sub: "Placeholder for Expert chemistry mentor specializing in organic & inorganic mastery.",
+                    image: "sakshi.jpeg"
+                }
+                
+            ],
+
+            // Editable Achievements Data
+            achievements: [
+                { name: "Shishu Kumar", exam: "Board Exam ", score: "Institute Topper with 94.4%", year: "2025-26", photo: "t1.png" },
+                { name: "Ayush Kumar", exam: "Board Exam", score: "Best score with 86.6%", year: "2025-26", photo: "t2.png" },
+                { name: "Chandan Kumar", exam: "Board Exam", score: "Nice score with 84 %", year: "2025-26", photo: "t3.png" },
+                { name: "Aditi Kumari", exam: "Board Exam", score: "average score with 76%", year: "2025-26", photo: "t4.png" },
+		],
+
+            // Editable Gallery Images Data
+            gallery: [
+                { url: "cr1.jpeg", caption: "Interactive Classroom Session at ROOTS CAMPUS" },
+                { url: "cr2.jpeg", caption: "Focusing on exams and tests at ROOTS CAMPUS"},
+                { url: "cr3.jpeg", caption: "celebrating a festival on the ROOTS CAMPUS"}
+                ],
+
+            // Editable Reviews / Testimonials
+            reviews: [
+                { name: "Parent of Board Student", text: "ROOTS CAMPUS under Swpan Sir's guidance helped my child build real confidence in Science and Math. The regular updates and structured environment made a big difference.", role: "Parent Review", rating: 5 },
+                { name: "Engineering Aspirant", text: "The focus on basic concepts before jumping to complex problem-solving in Physics is amazing. Highly recommended for any serious student!", role: "Class 12th Student", rating: 5 },
+                { name: "Medical Candidate", text: "Clear doubt sessions and regular evaluation test papers kept my preparation on track throughout the academic year.", role: "NEET Aspirant", rating: 5 }
+            ],
+
+            // Editable FAQs
+            faqs: [
+                { q: "How can I enquire about admission or book a visit?", a: "You can simply fill out the Admission Enquiry Form on this website and submit it via WhatsApp or Instagram. You can also call or message us directly at +91 88090 52703." },
+                { q: "Which courses and classes are offered at ROOTS CAMPUS?", a: "We offer programs for Class 8th, 9th, 10th Boards, Class 11th & 12th Science, as well as competitive examination preparation for JEE and NEET." },
+                { q: "How do I get details regarding course fees and batch timings?", a: "Since fee structures and batch options vary based on the class and subject combination selected, please send an enquiry via our form to receive current fee schedules on WhatsApp." },
+                { q: "Can I request a demo class before enrolling?", a: "Yes! Submit an admission enquiry specifying your class, and our team guided by Swpan Sir will schedule an orientation or demo session for you." }
+            ]
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // Set dynamic current year in footer
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+
+            // Render components dynamically
+            renderCourses('all');
+            renderFaculty();
+            renderAchievements();
+            renderGallery();
+            renderReviews();
+            renderFAQs();
+            populateCourseDropdown();
+
+            // Mobile menu event listeners
+            const menuBtn = document.getElementById("mobile-menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+            menuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
+
+            // Close mobile menu when clicking nav links
+            mobileMenu.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    mobileMenu.classList.add("hidden");
+                });
+            });
+
+            // Course filter buttons listener
+            const filterBtns = document.querySelectorAll(".filter-btn");
+            filterBtns.forEach(btn => {
+                btn.addEventListener("click", (e) => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove("bg-brand-navy", "text-white", "shadow-md");
+                        b.classList.add("bg-white", "text-slate-700");
+                    });
+                    e.target.classList.remove("bg-white", "text-slate-700");
+                    e.target.classList.add("bg-brand-navy", "text-white", "shadow-md");
+                    renderCourses(e.target.getAttribute("data-filter"));
+                });
+            });
+
+            // Admission Form Submission Handler
+            const form = document.getElementById("admission-form");
+            form.addEventListener("submit", handleAdmissionFormSubmit);
+
+            // Lightbox Event Listeners
+            document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+            document.getElementById("lightbox-modal").addEventListener("click", (e) => {
+                if (e.target.id === "lightbox-modal") closeLightbox();
+            });
+        });
+
+        function renderCourses(filter) {
+            const container = document.getElementById("courses-grid");
+            container.innerHTML = "";
+
+            const filtered = filter === "all" ? CONFIG.courses : CONFIG.courses.filter(c => c.category === filter);
+
+            filtered.forEach(course => {
+                const card = document.createElement("div");
+                card.className = "p-6 rounded-2xl glass-card flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group";
+                card.innerHTML = `
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-brand-cyan/10 text-brand-cyanDark">${course.class}</span>
+                            <span class="text-xs text-slate-400 font-medium"><i class="fa-regular fa-clock mr-1"></i>${course.duration}</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-cyanDark transition-colors">${course.name}</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">${course.description}</p>
+                        <div class="pt-2 border-t border-slate-100">
+                            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Subjects Covered:</span>
+                            <p class="text-xs text-slate-800 font-semibold mt-0.5">${course.subjects}</p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-4 border-t border-slate-100">
+                        <button onclick="selectCourseAndScroll('${course.name}')" class="w-full py-2.5 bg-brand-navy hover:bg-brand-cyanDark text-white font-bold rounded-xl text-xs shadow transition-all flex items-center justify-center gap-2">
+                            <span>Enquire Now</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function populateCourseDropdown() {
+            const select = document.getElementById("courseSelect");
+            select.innerHTML = '<option value="">-- Choose Course --</option>';
+            CONFIG.courses.forEach(c => {
+                const opt = document.createElement("option");
+                opt.value = c.name;
+                opt.textContent = c.name;
+                select.appendChild(opt);
+            });
+        }
+
+        function renderFaculty() {
+            const container = document.getElementById("faculty-grid");
+            container.innerHTML = "";
+            CONFIG.faculty.forEach(f => {
+                const card = document.createElement("div");
+                card.className = "p-6 rounded-2xl glass-card text-center space-y-4 shadow-sm hover:shadow-md transition-all border border-slate-200";
+                card.innerHTML = `
+                    <div class="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-brand-cyan shadow-md">
+                        <img src="${f.image}" alt="${f.name}" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/300x300/0f172a/ffffff?text=ROOTS+Faculty';">
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">${f.name}</h3>
+                        <p class="text-xs text-brand-cyanDark font-semibold mt-0.5">${f.subject}</p>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">${f.sub}</p>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function renderAchievements() {
+            const container = document.getElementById("achievements-grid");
+            container.innerHTML = "";
+            CONFIG.achievements.forEach(a => {
+                const card = document.createElement("div");
+                card.className = "p-5 rounded-2xl bg-white border border-slate-200 text-center space-y-3 shadow-sm hover:shadow-md transition-all";
+                card.innerHTML = `
+                    <img src="${a.photo}" alt="${a.name}" class="w-20 h-20 rounded-full mx-auto object-cover border border-slate-300" onerror="this.onerror=null; this.src='https://placehold.co/200x200/0f172a/ffffff?text=Student';">
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">${a.name}</h4>
+                        <p class="text-xs text-slate-500">${a.exam}</p>
+                    </div>
+                    <div class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 font-extrabold text-xs rounded-full border border-emerald-200">
+                        ${a.score}
+                    </div>
+                    <p class="text-[10px] text-slate-400">Academic Year: ${a.year}</p>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function renderGallery() {
+            const container = document.getElementById("gallery-grid");
+            container.innerHTML = "";
+            CONFIG.gallery.forEach((g, idx) => {
+                const item = document.createElement("div");
+                item.className = "relative rounded-2xl overflow-hidden cursor-pointer group shadow-sm hover:shadow-xl transition-all h-56 bg-slate-100";
+                item.onclick = () => openLightbox(g.url, g.caption);
+                item.innerHTML = `
+                    <img src="${g.url}" alt="${g.caption}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/ffffff?text=ROOTS+CAMPUS+Gallery';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-xs font-semibold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-magnifying-glass-plus text-brand-sky"></i>
+                            ${g.caption}
+                        </p>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function renderReviews() {
+            const container = document.getElementById("reviews-grid");
+            container.innerHTML = "";
+            CONFIG.reviews.forEach(r => {
+                const card = document.createElement("div");
+                card.className = "p-6 rounded-2xl glass-card space-y-4 border border-slate-200 shadow-sm flex flex-col justify-between";
+                let stars = "";
+                for (let i = 0; i < r.rating; i++) stars += '<i class="fa-solid fa-star text-amber-400 text-xs"></i>';
+                card.innerHTML = `
+                    <div class="space-y-3">
+                        <div class="flex gap-1">${stars}</div>
+                        <p class="text-xs text-slate-700 italic leading-relaxed">"${r.text}"</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100">
+                        <h4 class="font-bold text-slate-900 text-sm">${r.name}</h4>
+                        <p class="text-[11px] text-brand-cyanDark">${r.role}</p>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function renderFAQs() {
+            const container = document.getElementById("faq-accordion");
+            container.innerHTML = "";
+            CONFIG.faqs.forEach((faq, i) => {
+                const wrapper = document.createElement("div");
+                wrapper.className = "border border-slate-200 rounded-xl overflow-hidden transition-all bg-slate-50";
+                wrapper.innerHTML = `
+                    <button onclick="toggleFAQ(${i})" class="w-full p-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-100 transition-colors text-sm focus:outline-none">
+                        <span>${faq.q}</span>
+                        <i id="faq-icon-${i}" class="fa-solid fa-chevron-down text-xs text-slate-500 transition-transform"></i>
+                    </button>
+                    <div id="faq-answer-${i}" class="hidden p-4 pt-0 text-xs text-slate-600 border-t border-slate-200/50 bg-white leading-relaxed">
+                        ${faq.a}
+                    </div>
+                `;
+                container.appendChild(wrapper);
+            });
+        }
+
+        function toggleFAQ(index) {
+            const ans = document.getElementById(`faq-answer-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            ans.classList.toggle("hidden");
+            icon.classList.toggle("rotate-180");
+        }
+
+        function openLightbox(url, caption) {
+            document.getElementById("lightbox-img").src = url;
+            document.getElementById("lightbox-caption").textContent = caption;
+            document.getElementById("lightbox-modal").classList.remove("hidden");
+        }
+        function closeLightbox() {
+            document.getElementById("lightbox-modal").classList.add("hidden");
+        }
+
+        function selectCourseAndScroll(courseName) {
+            const courseSelect = document.getElementById("courseSelect");
+            if (courseSelect) {
+                courseSelect.value = courseName;
+            }
+            const enquireSection = document.getElementById("enquire");
+            if (enquireSection) {
+                enquireSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function handleAdmissionFormSubmit(e) {
+            e.preventDefault();
+
+            // Reset Errors
+            document.querySelectorAll(".error-msg").forEach(el => el.classList.add("hidden"));
+
+            let isValid = true;
+
+            const name = document.getElementById("studentName").value.trim();
+            const parent = document.getElementById("parentName").value.trim();
+            const mobile = document.getElementById("mobileNumber").value.trim();
+            const studentClass = document.getElementById("studentClass").value;
+            const course = document.getElementById("courseSelect").value;
+            const message = document.getElementById("studentMessage").value.trim();
+            const consent = document.getElementById("privacyConsent").checked;
+            const selectedChannel = document.querySelector('input[name="contactChannel"]:checked').value;
+
+            // Name validation
+            if (!name) {
+                showError("studentName");
+                isValid = false;
+            }
+
+            // Mobile validation (10-digit Indian pattern)
+            const mobileRegex = /^[6-9]\d{9}$/;
+            if (!mobileRegex.test(mobile)) {
+                showError("mobileNumber");
+                isValid = false;
+            }
+
+            // Class validation
+            if (!studentClass) {
+                showError("studentClass");
+                isValid = false;
+            }
+
+            // Course validation
+            if (!course) {
+                showError("courseSelect");
+                isValid = false;
+            }
+
+            // Privacy consent
+            if (!consent) {
+                document.getElementById("privacy-error").classList.remove("hidden");
+                isValid = false;
+            }
+
+            if (!isValid) return;
+
+            // Build Formatted Message
+            let formattedMsg = `Hello ${CONFIG.instituteName},\nI would like to enquire about admission.\n\n`;
+            formattedMsg += `Student Name: ${name}\n`;
+            if (parent) formattedMsg += `Parent/Guardian: ${parent}\n`;
+            formattedMsg += `Mobile: ${mobile}\n`;
+            formattedMsg += `Class/Exam: ${studentClass}\n`;
+            formattedMsg += `Course: ${course}\n`;
+            if (message) formattedMsg += `Message: ${message}\n`;
+            formattedMsg += `\nPlease share the admission details.\nThank you.`;
+
+            const successBox = document.getElementById("form-success-box");
+            const redirectBtn = document.getElementById("action-redirect-btn");
+            const btnText = document.getElementById("action-btn-text");
+            const copyBtn = document.getElementById("fallback-copy-btn");
+
+            if (selectedChannel === "WhatsApp") {
+                const encodedMsg = encodeURIComponent(formattedMsg);
+                const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodedMsg}`;
+                
+                redirectBtn.href = waUrl;
+                btnText.textContent = "Open WhatsApp Chat";
+                
+                // Show instruction box
+                successBox.classList.remove("hidden");
+                
+                // Trigger opening WhatsApp directly
+                window.open(waUrl, "_blank", "noopener,noreferrer");
+
+            } else if (selectedChannel === "Instagram") {
+                // Copy message to clipboard for Instagram fallback
+                copyTextToClipboard(formattedMsg);
+
+                redirectBtn.href = CONFIG.instagramProfileUrl;
+                btnText.textContent = "Open Instagram Profile";
+
+                document.getElementById("success-description").textContent = 
+                    "Instagram does not support direct URL pre-filled DMs. The enquiry text has been copied to your clipboard! Open our profile, paste it into the message box, and send.";
+
+                successBox.classList.remove("hidden");
+                
+                // Open Instagram Profile
+                window.open(CONFIG.instagramProfileUrl, "_blank", "noopener,noreferrer");
+            }
+
+            // Copy button click handler
+            copyBtn.onclick = () => {
+                copyTextToClipboard(formattedMsg);
+                alert("Enquiry message copied to clipboard!");
+            };
+        }
+
+        function showError(fieldId) {
+            const input = document.getElementById(fieldId);
+            const parent = input.parentElement;
+            const err = parent.querySelector(".error-msg");
+            if (err) err.classList.remove("hidden");
+        }
+
+        function copyTextToClipboard(text) {
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text);
+            } else {
+                const textArea = document.createElement("textarea");
+                textArea.value = text;
+                textArea.style.position = "fixed";
+                textArea.style.left = "-999999px";
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                } catch (err) {
+                    console.error('Fallback copy failed', err);
+                }
+                document.body.removeChild(textArea);
+            }
+        }
+
+        function requestFreeResources() {
+            const msg = encodeURIComponent(`Hello ROOTS CAMPUS, I would like to receive free study materials and sample notes on WhatsApp.`);
+            window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=${msg}`, "_blank");
+        }
+
+        function togglePrivacyModal() {
+            const modal = document.getElementById("privacy-modal");
+            modal.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
